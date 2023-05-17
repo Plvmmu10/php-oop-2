@@ -1,6 +1,6 @@
 <div class="col-3 p-2">
     <div class="card">
-        <div class="card-header">
+        <div class="card-header border-0 bg-transparent">
             <img src="<?php echo $product->image ?>" alt="<?php echo $product->name ?>" class="w-100 h-100">
         </div>
 
@@ -11,27 +11,33 @@
                 </span>
             </h3>
 
-            <h3>
+            <h4>
                 Prezzo:
-                <?php echo $product->price ?> &euro;
-            </h3>
+                <span class="text-danger">
+                    <?php echo $product->price ?> &euro;
+                </span>
+            </h4>
 
-            <h3>
+            <h4>
                 Tipo:
-                <?php echo $product->type ?>
-            </h3>
+                <span class="text-primary">
+                    <?php echo $product->type ?>
+                </span>
+            </h4>
 
-            <?php if ($product->animal == 'dog') { ?>
-                <p>
-                    <i class="fa-solid fa-dog"></i>
-                </p>
-            <?php } ?>
+            <div class="text-end">
+                <?php if ($product->animal == 'dog') { ?>
+                    <p>
+                        <i class="fa-solid fa-dog fs-3"></i>
+                    </p>
+                <?php } ?>
 
-            <?php if ($product->animal == 'cat') { ?>
-                <p>
-                    <i class="fa-solid fa-cat"></i>
-                </p>
-            <?php } ?>
+                <?php if ($product->animal == 'cat') { ?>
+                    <p>
+                        <i class="fa-solid fa-cat fs-3"></i>
+                    </p>
+                <?php } ?>
+            </div>
         </div>
     </div>
 </div>

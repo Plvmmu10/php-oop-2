@@ -17,3 +17,9 @@
 </head>
 
 <body>
+
+    <header class="bg-primary">
+        <div class="container text-center text-white p-2">
+            <h1>LovePuppy Store &hearts;</h1>
+        </div>
+    </header>

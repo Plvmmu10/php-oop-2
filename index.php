@@ -7,7 +7,7 @@ include __DIR__ . '/Models/Product.php';
 
 <main>
     <div class="container my-5">
-        <div class="row bg-success p-2">
+        <div class="row bg-success p-2 rounded-top-4">
             <h1 class="text-white">Oggetti per cane!</h1>
 
             <?php foreach ($products as $product) { ?>
@@ -18,7 +18,7 @@ include __DIR__ . '/Models/Product.php';
 
         </div>
 
-        <div class="row bg-danger p-2">
+        <div class="row bg-danger p-2 rounded-bottom-4">
             <h1 class="text-white">Oggetti per gatto!</h1>
 
             <?php foreach ($products as $product) { ?>
