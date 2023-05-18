@@ -1,7 +1,8 @@
 <?php
-
+include __DIR__ . '/Weight.php';
 class Category extends Product
 {
+    use Weight;
     public $animal;
 
 
@@ -10,5 +11,7 @@ class Category extends Product
         parent::__construct($name, $type, $image, $price);
         $this->animal = $animal;
     }
+
+
 
 }

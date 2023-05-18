@@ -14,6 +14,8 @@ class Product
         $this->image = $image;
         $this->price = $price;
     }
+
+
 }
 
 
@@ -27,9 +29,14 @@ $collareGatto = new Category('Collare per gatto', 'Utility', 'https://m.media-am
 
 $ciboCane = new Category('Croccantini per cane', 'Food', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5SivANsaDphT7VSPcoSzLgAqDoS6cwkLSg&usqp=CAU', '12.00', 'dog');
 
+$ciboCane->setWeight('2 kg');
+
 $ciboGatto = new Category('Croccantini per gatto', 'Food', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnUc7b9F1AZeJhKO8jW4qwk01CulhdPJrNRw&usqp=CAU', '15.00', 'cat');
 
+$ciboGatto->setWeight('2.5 kg');
+
 $tennisCane = new Category('Pallina da tennis', 'Game', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjw-q57aRYFCMito_ujKqYxrTH0-LZgOwAfw&usqp=CAU', '3.00', 'dog');
+
 
 
 $products = [$cucciaCane, $cucciaGatto, $collareCane, $collareGatto, $ciboCane, $ciboGatto, $tennisCane];

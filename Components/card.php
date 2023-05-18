@@ -38,6 +38,12 @@
                     </p>
                 <?php } ?>
             </div>
+
+
+            <p>
+                <?php echo $product->weight ?>
+            </p>
+
         </div>
     </div>
 </div>
