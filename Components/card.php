@@ -25,6 +25,13 @@
                 </span>
             </h4>
 
+            <h4>
+                Peso:
+                <span class="fw-bold">
+                    <?php echo $product->weight ?>
+                </span>
+            </h4>
+
             <div class="text-end">
                 <?php if ($product->animal == 'dog') { ?>
                     <p>
@@ -40,9 +47,7 @@
             </div>
 
 
-            <p>
-                <?php echo $product->weight ?>
-            </p>
+
 
         </div>
     </div>

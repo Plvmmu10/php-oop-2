@@ -10,6 +10,14 @@ class Category extends Product
     {
         parent::__construct($name, $type, $image, $price);
         $this->animal = $animal;
+
+
+        try {
+            $this->setWeight('');
+        } catch (Exception $e) {
+            echo $e->getMessage();
+        }
+
     }
 
 
